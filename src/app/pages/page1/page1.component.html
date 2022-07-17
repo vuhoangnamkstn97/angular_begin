@@ -1,0 +1,50 @@
+<div style="width: 400px; margin-top: 60px; margin-left: 60px;">
+  <form [formGroup]="form">
+    <ng-container>
+      <tui-input formControlName="email">Type an email</tui-input>
+      <tui-field-error class="my-4" formControlName="email"></tui-field-error>
+    </ng-container>
+    <ng-container>
+      <tui-input formControlName="firstName">First Name</tui-input>
+      <tui-field-error
+        class="my-4"
+        formControlName="firstName"
+      ></tui-field-error>
+    </ng-container>
+    <ng-container>
+      <tui-input formControlName="lastName">Last Name</tui-input>
+      <tui-field-error
+        class="my-4"
+        formControlName="lastName"
+      ></tui-field-error>
+    </ng-container>
+    <ng-container>
+      <tui-input-password formControlName="password">
+        Type a password
+      </tui-input-password>
+      <tui-field-error
+        class="my-4"
+        formControlName="password"
+      ></tui-field-error>
+    </ng-container>
+    <ng-container>
+      <tui-checkbox-labeled formControlName="agreeToToC">
+        I agree to
+        <a tuiLink routerLink="">Terms and Conditions</a>
+      </tui-checkbox-labeled>
+      <tui-field-error
+        class="my-4"
+        formControlName="agreeToToC"
+      ></tui-field-error>
+    </ng-container>
+    <ng-container>
+        <button
+        tuiButton
+        type="button"
+        class="tui-space_right-3 tui-space_bottom-3"
+    >
+        Button
+    </button>
+    </ng-container>
+  </form>
+</div>

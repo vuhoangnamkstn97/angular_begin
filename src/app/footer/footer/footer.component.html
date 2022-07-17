@@ -1,0 +1,11 @@
+<div
+  class="fixed bottom-0 bg-primary-700 w-full flex justify-center items-center py-10"
+>
+  <a *ngFor="let item of mediaItems" [href]="item.link">
+    <tui-avatar
+      class="mx-2"
+      avatarUrl="{{baseDirectoryImages}}/{{item.icon}}"
+      size="l"
+    ></tui-avatar>
+  </a>
+</div>
